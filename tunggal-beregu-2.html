@@ -18,7 +18,7 @@
 
 <body>
     <!-- container -->
-    <div class="container-fluid bg-warning">
+    <div class="container-fluid bg-warning" id="content">
 
         <!-- kop -->
         <div class="d-flex justify-content-around align-items-center text-bg-danger">
@@ -37,34 +37,35 @@
 
             <!-- logo -->
             <div>
-                <img src="assets/img/sikap-pasang.png" alt="" srcset="" width="100px" />
+                <img src="assets/img/sikap-pasang.png" alt="" srcset="" width="80px" />
             </div>
             <!-- /logo -->
         </div>
         <!-- /kop -->
 
-        <!-- golongan dan kategori -->
-        <div class="row mt-3">
-            <div class="col-4 offset-4">
-                <h2 class="text-center p-0 m-0 text-bg-secondary py-1">REMAJA - PUTRI</h2>
+        <!-- jenis pertandingan -->
+        <div class="row my-3">
+            <!-- golongan dan kategori -->
+            <div class="col-3">
+                <h3 class="text-center p-0 m-0 text-bg-secondary py-1">REMAJA - PUTRI</h3>
+            </div>
+            <!-- nama pertandingan -->
+            <div class="col-3">
+                <h3 class="text-center p-0 m-0 text-bg-secondary py-1">Tunggal Bersenjata</h3>
+            </div>
+            <!-- pesilat kontingen -->
+            <div class="col-3">
+                <h3 class="text-center p-0 m-0 text-bg-secondary py-1">Yayan / Gowa A</h3>
+            </div>
+            <!-- no undian -->
+            <div class="col-3">
+                <h3 class="text-center p-0 m-0 text-bg-secondary py-1">No. 123</h3>
             </div>
         </div>
-        <!-- /golongan dan kategori -->
-
-        <!-- kontingen dan no undian -->
-        <div class="row mt-3">
-            <div class="col-4 offset-2">
-                <h3 class="text-center p-0 m-0 bg-white py-1">Yayan Ruhyan / Aceh B</h3>
-            </div>
-            <div class="col-4">
-                <h3 class="text-center p-0 m-0 bg-white py-1">No. Undian 129</h3>
-            </div>
-        </div>
-        <!-- /kontingen dan no undian -->
-
+        <!-- /jenis pertandingan -->
 
         <!-- penilaian -->
-        <div class="row mt-3">
+        <div class="row pt-1 pb-1">
             <!-- unsur nilai -->
             <div class="col-8">
                 <div class="bg-white">
@@ -117,6 +118,8 @@
                         </tbody>
                     </table>
                 </div>
+                <button id="fullscreen-btn"><i class="fas fa-expand"></i> full</button>
+                <button id="fullscreen-btn"><i class="fas fa-compress"></i> full</button>
             </div>
             <!-- /unsur nilai -->
 
@@ -154,7 +157,7 @@
                 <!-- /hasil akhir -->
 
                 <!-- timer -->
-                <div class=" mb-2">
+                <div class=" mb-3">
                     <h3 class="m-0 p-2 text-bg-dark">TIMER:</h3>
                     <span class="text-center text-bg-light" id="timer">00:00</span>
                 </div>
@@ -165,13 +168,14 @@
         <!-- /penilaian -->
 
         <!-- footer -->
-        <div class="bg-danger" style="height:23px;"></div>
+        <div class="bg-danger" style="height:34px;"></div>
         <!-- /footer -->
 
     </div>
     <!-- /container -->
 
     <script src="assets/bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
