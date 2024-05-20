@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juri</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../assets/bootstrap5/css/bootstrap.css" />
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="../assets/bootstrap5/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.css" />
+    <!-- jquery -->
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body class="bg-warning ">
+    <!-- container -->
+    <div class="container-fluid">
+
+        <!-- nama juri -->
+        <div class="p-1 text-bg-danger mb-1">
+            <h1 class="text-center">JURI 1</h1>
+        </div>
+        <!-- /nama juri -->
+
+        <!-- unsur penilaian -->
+        <div class="row mb-2">
+            <div class="col-lg-6 col-md-12">
+                <h4>UNSUR PENILAIAN</h2>
+                    <table class="table table-sm">
+                        <thead class="text-bg-primary">
+                            <tr>
+                                <th>No.</th>
+                                <th>Unsur Nilai</th=>
+                                <th class="text-center">Batasan Nilai</th>
+                                <th class="text-center" style="width: 20%;">Nilai</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Kualitas Teknik</td>
+                                <td class="text-center">40 - 100</td>
+                                <td class="text-center">
+                                    <input type="number" name="" id="un1" class="form-control ">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Kuantitas Teknik</td>
+                                <td class="text-center">20 - 80</td>
+                                <td class="text-center">
+                                    <input type="number" name="" id="un2" class="form-control ">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Ketangkasan dan Kecepatan</td>
+                                <td class="text-center">20 - 80</td>
+                                <td class="text-center">
+                                    <input type="number" name="" id="un3" class="form-control ">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Stamina dan Pernafasan</td>
+                                <td class="text-center">10 - 70</td>
+                                <td class="text-center">
+                                    <input type="number" name="" id="un4" class="form-control ">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>Kemantapan Sikap</td>
+                                <td class="text-center">10 - 70</td>
+                                <td class="text-center">
+                                    <input type="number" name="" id="un5" class="form-control ">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>Irama / Musik Pengirim</td>
+                                <td class="text-center">10 - 70</td>
+                                <td class="text-center">
+                                    <input type="number" name="" id="un6" class="form-control ">
+                                </td>
+                            </tr>
+                            <tr class="text-center fw-bold">
+                                <td colspan="3">Jumlah Nilai</td>
+                                <td><input type="number" name="" id="jn" class="form-control" readonly></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <h4>HUKUMAN</h2>
+                    <table class="table table-sm">
+                        <thead class="text-bg-primary">
+                            <tr>
+                                <th>No.</th>
+                                <th>Unsur Hukuman</th>
+                                <th class="text-center">Pengurang</th>
+                                <th class="text-center" style="width: 15%;">Nilai</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Lebih/kurang waktu 10-15 detik</td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-lg btn-danger" id="min10">-10</button>
+                                    <button type="button" class="btn btn-lg btn-secondary d-none" id="undo10"><i class="bi bi-arrow-counterclockwise"></i></button>
+                                </td>
+                                <td class="text-center">
+                                    <input type="text" name="" id="uh1" class="form-control" readonly>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Lebih/kurang waktu 16-30 detik</td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-lg btn-danger" id="min15">-15</button>
+                                    <button type="button" class="btn btn-lg btn-secondary d-none" id="undo15"><i class="bi bi-arrow-counterclockwise"></i></button>
+                                </td>
+                                <td class="text-center">
+                                    <input type="text" name="" id="uh2" class="form-control" readonly>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Lebih/kurang diatas 30 detik</td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-lg btn-danger" id="min20">-20</button>
+                                    <button type="button" class="btn btn-lg btn-secondary d-none" id="undo20"><i class="bi bi-arrow-counterclockwise"></i></button>
+                                </td>
+                                <td class="text-center">
+                                    <input type="text" name="" id="uh3" class="form-control" readonly>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Setiap kali sejata terlepas</td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-lg btn-danger" id="min10-b">-10</button>
+                                    <button class="btn btn-lg btn-warning" id="dhn4"></button>
+                                    <button type="button" class="btn btn-lg btn-secondary" id="undo10-b"><i class="bi bi-arrow-counterclockwise"></i></button>
+                                </td>
+                                <td class="text-center">
+                                    <input type="text" name="" id="uh4" class="form-control " value="" readonly>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>Senjata tidak lepas sesuai deskripsi</td>
+                                <td class="text-center">-10</td>
+                                <td class="text-center">
+                                    <input type="text" name="" id="uh5" class="form-control ">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>Setiap kali keluar arena</td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-lg btn-danger" id="min5">-5</button>
+                                    <button class="btn btn-lg btn-warning" id="dhn6"></button>
+                                    <button type="button" class="btn btn-lg btn-secondary" id="undo5"><i class="bi bi-arrow-counterclockwise"></i></button>
+                                </td>
+                                <td class="text-center">
+                                    <input type="text" name="" id="uh6" class="form-control " readonly>
+                                </td>
+                            </tr>
+                            <tr class="text-center fw-bold">
+                                <td colspan="3">Jumlah Nilai Hukuman</td>
+                                <td><input type="text" name="" id="jnh" class="form-control" readonly></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <h4 class="d-inline">Nilai Akhir : </h4>
+                <input type="number" name="" id="nilai-akhir" readonly>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-danger">SIMPAN</button>
+            </div>
+        </div>
+        <!-- nilai akhir -->
+
+        <!-- /nilai akhir -->
+        <!-- /unsur penilaian -->
+
+    </div>
+    <!-- /container -->
+    <script src="../assets/bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/juri/perhitungan-juri.js"></script>
+
+    <script>
+
+
+    </script>
+</body>
+
+</html>
